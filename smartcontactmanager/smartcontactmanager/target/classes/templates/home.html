@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::Layout(~{::section})">
+
+
+<head>
+<title>Home page</title>
+
+
+</head>
+<body>
+	<section class="bg-img d-flex justify-content-center align-item-center">
+		<div class="homename">
+			<h1>WELCOME TO  CONTCAT MANAGER!!</h1>
+			
+			<div class="container1 text-center ">
+				
+				
+				<a th:href="@{/signin}" class="cssbuttons-io-button "> Get started 
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+							width="24" height="24">
+							<path fill="none" d="M0 0h24v24H0z"></path>
+							<path fill="currentColor"
+								d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+					</div>
+				</a>
+				</div>
+    
+    
+  
+
+		</div>
+
+	</section>
+
+
+</body>
+</html>

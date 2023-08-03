@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::Layout(~{::section})">
+<head>
+
+<style type="text/css">
+
+
+</style>
+
+<meta charset="UTF-8">
+<title>SignIN Page</title>
+</head>
+<body>
+	<section class="bg-img">
+
+		<div id="login">
+		
+
+
+			<div th:if="${param.error}" class="alert alert-primary" role="alert">Invalid
+				Password</div>
+
+			<div th:if="${param.logout}" class="alert alert-primary" role="alert">You
+				have been Logout</div>
+				
+			<div class="center-container">
+				<div class="form-container">
+				
+				                   <h1 class="login-logo">Login</h1>
+					<form class="form " th:action="@{/dologin}" action="#"
+						method="post">
+						
+						
+						<div class="form-group">
+							<label> Email</label> <input type="text" id="email"
+								name="username" required="">
+						</div>
+						<div class="form-group">
+							<label for="textarea">Password</label> <input type="password"
+								id="email" name="password" required="">
+
+
+						</div>
+						<button class="form-submit-btn" type="submit">SignIN</button>
+						
+						  
+					</form>
+					
+					<div class="icon">
+					<ion-icon  size="large" name="logo-facebook"></ion-icon>
+					 <ion-icon size="large" name="mail-outline"> </ion-icon> 
+					<ion-icon size="large" name="logo-instagram"></ion-icon>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+
+	</section>
+
+</body>
+</html>

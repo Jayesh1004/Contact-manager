@@ -1,0 +1,101 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+
+	
+<head>
+<title>user_dashboard</title>
+
+
+</head>
+<body>
+	<section>
+	
+	<div class="login-box">
+
+			<div class="name">
+				
+				<div th:if="${session.message}" class="alert"
+					th:classappend="${'alert-' + session.message.type}" role="alert">
+					
+					<p th:text="${session.message.content}"></p>
+					
+				</div>
+
+
+
+
+
+
+				<h2>Update Contact</h2>
+
+
+			</div>
+			<form action="#" th:object="${contact}" method="post"
+				th:action="@{/user/process-update} " enctype="multipart/form-data" >
+				
+				<input th:value="${contact.cid}" type="hidden" name="cid" ><label>Name</label>
+
+				<div class="user-box">
+
+					<input th:value="${contact.name}" type="text" name="name" required="*"><label>Name</label>
+				</div>
+				
+				<div class="user-box">
+				
+					<input th:value="${contact.secondName}" type="text" name="secondName"> <label>Nick
+						Name</label>
+				</div>
+				<div class="user-box">
+
+					<input th:value="${contact.phone}"  type="number" name="phone" required min="10"> <label>Phone
+						Number</label>
+				</div>
+				
+				<div class="user-box">
+				
+					<input th:value="${contact.email}"   type="text" name="email" required=""> <label>Email</label>
+				</div>
+				
+				<div class="user-box">
+				 
+					<input th:value="${contact.work}"  type="text" name="work"> <label>Work</label>
+				</div>
+				
+				<div class="user-box ">
+				
+					<input  th:value="${contact.description}" class="user-box1" type="text" name="description" required="">
+					<label>Description</label>
+				</div>
+				
+
+				<div class="user-box ">
+					<input type="file" name="pimg">
+				</div>
+				
+				
+				
+
+				<button>
+					<div class="svg-wrapper-1">
+						<div class="svg-wrapper">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								width="24" height="24">
+                             <path fill="none" d="M0 0h24v24H0z"></path>
+                         <path fill="currentColor"
+									d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                         </svg>
+						</div>
+					</div>
+					<span>Update</span>
+				</button>
+
+
+
+			</form>
+		</div>
+	
+	</section>
+	
+	
+</body>
+</html>

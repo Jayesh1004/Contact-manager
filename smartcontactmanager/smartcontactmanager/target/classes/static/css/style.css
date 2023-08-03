@@ -1,0 +1,523 @@
+body {
+	background: white;
+}
+
+.bg-nevbar {
+	background-color: #268b8c !important;
+}
+
+.bg-img {
+	height: 93vh;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../img/background.jpg");
+	background-size: cover;
+}
+
+.homename {
+	margin-top: 10%;
+	color: #686b6b;
+}
+
+.my-card {
+	margin: 20px;
+	padding: 20px;
+	background: #ffffff;
+	text-align: center;
+}
+
+/* Login from.................. */
+ion-icon {
+	color: rgb(255, 0, 0);
+}
+
+
+#login .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 450px;
+	border: 1px solid #9C9C9C;
+	background-color: black;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+	padding: 50px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link
+	{
+	margin-top: -85px;
+}
+
+.form-group {
+	padding-top: 30px;
+}
+
+.Register {
+	padding-left: 400px;
+}
+
+/* SideBar Style */
+
+@media only screen and (max-width:600px){
+	.sidebar {
+	display:none;
+	width: 80% !important;
+	background:black;
+	height:100%;
+	position:fixed;
+	padding-top:20px;
+	
+}
+
+/* Side Bar............................ */
+.content {
+	margin-left:0%;
+}
+} 
+
+
+.sidebar {
+	width: 200px;
+	background:black;
+	height:100%;
+	position:fixed;
+	padding-top:45px;
+}
+.sidebar a{
+	display:block;
+	width: 100%;
+	padding:25px 25px;
+	text-decoration:none;
+	color: white;
+}
+.sidebar a:hover{
+background:gray;
+}
+.sidebar.divider{
+	height:.5px;
+	width:100px;
+	background:gray;
+	
+}
+
+.content {
+	margin-left: 20%;
+}
+.sidebar .crossbtn{
+	position:absolute;
+	top:0;
+	right:30px;
+	font-size:30px;
+	cursor:pointer;
+	color: white;
+}
+.login-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 650px;
+  height:px;
+  padding: 40px;
+  transform: translate(-30%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+
+.login-box a:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+}
+.login-logo{
+	font-family: 'Dancing Script', cursive;
+
+}
+
+.icon ion-icon {
+	
+	margin-right:50px;
+  color: white;
+}
+
+.name{
+	color:white;
+	margin:-5px;
+	margin-top:-5px ;
+	
+}
+
+@media only screen and (max-width:500px){
+	.login-box {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 300px;
+  height:700px;
+  padding: 40px;
+  transform: translate(-30%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+}
+
+
+/* Sign in form....................... */
+button {
+  font-family: inherit;
+  font-size: 15px;
+  background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+  transform: rotate(45deg);
+}
+
+.img{
+	font-size: 200px;
+	color: black;
+	display: flex;
+    justify-content: center;
+   align-items: center;
+}
+ .container1{
+    display: grid;
+    place-items: center;
+    height: 200px; /* Set the height of the container as needed */
+  }
+@media screen and (max-width: 600px) {
+  .sidebar{
+ position: relative; /* You need to set position to anything other than static for z-index to work */
+    z-index: 9999;
+    
+  
+  
+  }
+}
+.form-container {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* Center the container both horizontally and vertically */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 32px 24px;/* Adjust to set the height of the parent element (viewport height) */
+}
+
+/*---------------user dashbord----------------------------------  */
+
+.cssbuttons-io-button { 
+			
+width:30%;
+justify-content:center;
+ background: #A370F0;
+ color: white;
+ font-family: inherit;
+ padding: 0.35em;
+ padding-left: 1.2em;
+ font-size: 17px;
+ font-weight: 500;
+ border-radius: 0.9em;
+ border: none;
+ letter-spacing: 0.05em;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -webkit-box-shadow: inset 0 0 1.6em -0.6em #714da6;
+         box-shadow: inset 0 0 1.6em -0.6em #714da6;
+ overflow: hidden;
+ position: relative;
+ height: 2.8em;
+ padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+ background: white;
+ margin-left: 1em;
+ position: absolute;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+ height: 2.2em;
+ width: 2.2em;
+ border-radius: 0.7em;
+ -webkit-box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+         box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+ right: 0.3em;
+ -webkit-transition: all 0.3s;
+ transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+ width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+ width: 1.1em;
+ -webkit-transition: -webkit-transform 0.3s;
+ transition: -webkit-transform 0.3s;
+ transition: transform 0.3s;
+ transition: transform 0.3s, -webkit-transform 0.3s;
+ color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+ -webkit-transform: translateX(0.1em);
+     -ms-transform: translateX(0.1em);
+         transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+ -webkit-transform: scale(0.95);
+     -ms-transform: scale(0.95);
+         transform: scale(0.95);
+}
+
+.containerbtn{
+	padding-left:480px;
+	padding-top: 5%;
+}
+
+/* Main Body */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #dc2424, #4a569d);
+  z-index: -1;
+}
+
+
+.user-dashboard {
+  
+  width: 100%;
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+.gradient-image{
+	  position: relative; 
+}
+
+.gradient-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+   
+}
+
+
+
+
+
+
+
+    

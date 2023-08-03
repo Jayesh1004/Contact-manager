@@ -1,0 +1,109 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::Layout(~{::section})">
+
+
+<head>
+<title>user_dashboard</title>
+
+
+</head>
+<body>
+	<section>
+		<div style="color: white;">
+		
+		<div th:if="${session.message}" class="alert"
+					th:classappend="${'alert-' + session.message.type}" role="alert">
+					
+					<p th:text="${session.message.content}"></p>
+					
+				</div> 
+ 
+			<div class="card-body" th:if="${contact}">
+			
+
+				<div class="container1 ">
+				
+
+					<ion-icon class="img" name="person-circle-outline"></ion-icon>
+
+					<h3>
+						<span th:text="${contact.name}"></span>(<span
+							th:text="${contact.secondName}"></span>)
+					</h3>
+
+					<h3>
+						<ion-icon name="call-outline"></ion-icon>
+						<span th:text="${contact.phone}"></span>
+
+					</h3>
+
+
+
+					<table class="table table-bordered" style="color: white;">
+						<thead>
+							<tr>
+								<th scope="col" class="text-center" >ID</th>
+
+								<td><span th:text="${contact.cid}"></span></td>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="col" class="text-center">Email</th>
+								<td><span th:text="${contact.email}"></span></td>
+							<tr>
+								<th scope="col" class="text-center">Work</th>
+								<td><span th:text="${contact.work}"></span></td>
+
+
+							</tr>
+
+
+						</tbody>
+
+
+
+					</table>
+
+
+					<div class="description">
+
+						<th:block th:utext="${contact.description}"></th:block>
+
+
+
+					</div >
+					
+					<div class="container text-center mt-5 ">
+					
+					
+							<form method="post" th:action="@{'/user/update-contact/'+${contact.cid}}">
+							<button  type="submit" 
+								class="btn btn-denger btn-sm">Update <ion-icon
+										name="clipboard-outline"></ion-icon>
+
+							</button></form>
+					
+
+					<a  th:onclick="|deleteContact(${contact.cid})|"
+								class="btn btn-denger btn-em"> <ion-icon
+										name="trash-outline"></ion-icon>
+							</a>
+							
+							</div>
+
+
+				</div>
+			</div>
+			
+			<h1 th:unless="${contact}" class="text-center p-5"  style="color: red;">You don't have permission to see this contact.....</h1>
+
+		</div>
+
+	</section>
+
+
+</body>
+</html>
